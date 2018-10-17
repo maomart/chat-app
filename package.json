@@ -4,12 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js",
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
+  },
+    "engines": {
+    "node": "10.12.0"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dirname": "^0.1.0",
-    "express": "^4.16.4"
+    "engine": "^0.1.12",
+    "engines": "^0.4.0",
+    "expect": "^23.6.0",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "moment": "^2.22.2",
+    "nodemon": "^1.18.4",
+    "socket.io": "^2.1.1"
   }
 }
